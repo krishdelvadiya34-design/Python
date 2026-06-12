@@ -20,17 +20,12 @@ while True:
              
                 raw=int(input("\nEnter the number of raw for the pattern:"))
                 print("\nThis is {*} pattern:")
-                for i in range(1,raw):
-                  for j in range(i):
-                    print("*",end=(""))
-                  print()
-        
-                for i in range(raw,1,-1):
+                for i in range(1,raw+1):
                   for j in range(i):
                     print("*",end=(""))
                   print()
 
-            if choice==2:
+            elif choice==2:
                
                 raw=int(input("\nEnter the number of raw for the pattern:"))
                 print("\nThis is {1,2,3} pattern:")
@@ -39,7 +34,8 @@ while True:
                     print(i,end=(""))
                   print()
 
-
+            else:
+                print("Invalid choice")
 
         case 2:
             sum=0
@@ -57,7 +53,9 @@ while True:
                         print(i,"is Neutral")
                     else:
                         print("Invalid")
+                        
                     sum=sum+i
+                    
                 print("\nSum of all numbers from",num1,"to",num2,"is:",sum) 
                 
 
@@ -71,7 +69,9 @@ while True:
                         print(i,"is Neutral")
                     else:
                         print("Invalid")
+                        
                     sum=sum+i
+                    
                 print("\nSum of all numbers from",num1,"to",num2,"is:",sum) 
 
         case 3:
