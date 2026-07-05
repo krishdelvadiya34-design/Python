@@ -49,4 +49,13 @@ if number<0:
 else:
     print("this is a nuetral number")
 
-    
+a="hello world !"
+
+print(a.split())
+
+b=["hello","world","!"]
+
+print(" ".join(b))
+
+c="i am boy"
+print(c.replace("boy","man"))

@@ -11,10 +11,11 @@ while True:
 
     match choice:
         case 1:
+
             print("\nEnter 1 for {*} pattern")
             print("Enter 2 for {1,2,3} pattern")
 
-            choice=int(input("\nEnter your choice:"))
+            sub_choice=int(input("\nEnter your choice:"))
 
             if choice==1:
              
@@ -24,7 +25,11 @@ while True:
                   for j in range(i):
                     print("*",end=(""))
                   print()
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 52927d6 (project 3 complete)
             elif choice==2:
                
                 raw=int(input("\nEnter the number of raw for the pattern:"))
@@ -32,12 +37,17 @@ while True:
                 for i in range(1,raw+1):
                   for j in range(i):
                     print(i,end=(""))
+<<<<<<< HEAD
                   print()
+=======
+                print()
+>>>>>>> 52927d6 (project 3 complete)
 
             else:
                 print("Invalid choice")
 
         case 2:
+
             sum=0
             num1=int(input("\nEnter the start of the range:"))
             num2=int(input("Enter the end of the range:"))
@@ -53,9 +63,15 @@ while True:
                         print(i,"is Neutral")
                     else:
                         print("Invalid")
+<<<<<<< HEAD
                         
                     sum=sum+i
                     
+=======
+
+                    sum=sum+i
+
+>>>>>>> 52927d6 (project 3 complete)
                 print("\nSum of all numbers from",num1,"to",num2,"is:",sum) 
                 
 
@@ -69,12 +85,19 @@ while True:
                         print(i,"is Neutral")
                     else:
                         print("Invalid")
+<<<<<<< HEAD
                         
                     sum=sum+i
                     
+=======
+
+                    sum=sum+i
+
+>>>>>>> 52927d6 (project 3 complete)
                 print("\nSum of all numbers from",num1,"to",num2,"is:",sum) 
 
         case 3:
+            
             print("\nExiting the program.Goodbye!")
             break
                 

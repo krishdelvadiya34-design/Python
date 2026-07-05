@@ -17,3 +17,4 @@ print("Favourite Number:",number,"(type:",type(number),",memory address:",id(num
 print("your birth year is approximately:",year,"(based on your age of",age,")\n")
 
 print("Thank you for using the personal Data Collecter.Goodbye!")
+
