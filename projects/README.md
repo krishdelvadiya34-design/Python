@@ -1,187 +1,209 @@
-# 📊 Data Analyzer and Transformer
+# 👨‍💼 Employee Management System (Python OOP)
 
-A beginner-friendly **Python console application** that allows users to input numerical data and perform various data analysis and transformation operations through a menu-driven interface. This project demonstrates the use of Python functions, list comprehensions, lambda functions, recursion, sorting, and built-in functions.
-
----
-
-## 🚀 Features
-
-### 1. Input Data
-
-* Accepts multiple integer values from the user in a single line.
-* Stores the data in a list for further operations.
-
-### 2. Display Data Summary
-
-Uses Python built-in functions to display:
-
-* Total number of elements
-* Minimum value
-* Maximum value
-* Sum of all values
-* Average of the dataset
-
-### 3. Calculate Factorial
-
-* Calculates the factorial of a user-entered number.
-* Demonstrates the use of a separate function for mathematical operations.
-* *(Can be implemented using recursion for better learning.)*
-
-### 4. Filter Data by Threshold
-
-* Accepts a threshold value.
-* Displays all elements greater than or equal to the threshold.
-* Uses a **Lambda Function** along with list comprehension.
-
-### 5. Sort Data
-
-Provides two sorting options:
-
-* Ascending Order
-* Descending Order
-
-### 6. Display Dataset Statistics
-
-Returns multiple values from a function:
-
-* Minimum Value
-* Maximum Value
-* Sum of Values
-* Average Value
-
-### 7. Exit Program
-
-Safely terminates the application.
+A simple **Employee Management System** built using **Python Object-Oriented Programming (OOP)** concepts. This project demonstrates **Inheritance, Method Overriding, Constructors, Lists of Objects, and Menu-Driven Programming**.
 
 ---
 
-## 🛠️ Python Concepts Used
+## 📌 Features
 
-* Functions
-* List Comprehension
-* Lambda Functions
-* Built-in Functions
-* Sorting (`sorted()`)
-* Returning Multiple Values
-* Loops
-* Conditional Statements (`if-elif-else`)
-* User Input Handling
+- ➕ Add Employee
+- 👔 Add Manager
+- 💻 Add Developer
+- 📋 Display Employee Details
+- 📋 Display Manager Details
+- 📋 Display Developer Details
+- 🧬 Uses Inheritance
+- 🔁 Method Overriding
+- 🧱 Object-Oriented Design
+- 📂 Stores multiple objects using Python Lists
 
 ---
 
-## 📂 Project Structure
+## 🛠️ Concepts Used
 
-```text
-Data Analyzer and Transformer
+- Classes & Objects
+- Constructors (`__init__`)
+- Inheritance
+- `super()`
+- Method Overriding
+- Lists
+- Loops
+- Conditional Statements
+- User Input
+- Menu-Driven Program
+
+---
+
+## 📁 Project Structure
+
+```
+Employee-Management-System/
 │
-├── Input Data
-├── Data Summary
-├── Factorial Calculator
-├── Threshold Filter
-├── Sorting (Ascending & Descending)
-├── Dataset Statistics
-└── Exit
+├── employee_management.py
+└── README.md
 ```
 
 ---
 
-## ▶️ Sample Output
+## 🏗️ Class Diagram
 
-```text
-Welcome to the Data Analyzer and Transformer Program!
-
-Main Menu:
-1. Input Data
-2. Display Data Summary
-3. Calculate Factorial
-4. Filter Data by Threshold
-5. Sort Data
-6. Display Dataset Statistics
-7. Exit Program
-
-Enter your choice: 1
-
-Enter elements separated by space:
-12 45 7 18 30
-
-Data entered successfully.
+```
+                Employee
+               /        \
+              /          \
+         Manager      Developer
 ```
 
-### Data Summary
+### Employee
 
-```text
-Total of Elements : 5
-Minimum Value     : 7
-Maximum Value     : 45
-Sum of Values     : 112
-Average Value     : 22.4
+**Attributes**
+- Name
+- Age
+- Salary
+
+**Methods**
+- `showinfo()`
+
+---
+
+### Manager
+
+Inherits from **Employee**
+
+**Additional Attribute**
+- Department
+
+Overrides:
+- `showinfo()`
+
+---
+
+### Developer
+
+Inherits from **Employee**
+
+**Additional Attribute**
+- Programming Language
+
+Overrides:
+- `showinfo()`
+
+---
+
+## ▶️ Menu
+
+```
+Choose an option:
+
+1. Create Employee
+2. Create Manager
+3. Create Developer
+4. Show Details
+5. Exit
 ```
 
 ---
 
-## 💻 Requirements
+## 💻 Example Output
 
-* Python 3.x
-* No external libraries required.
+```
+Choose an option:
+
+1. Create Employee
+2. Create Manager
+3. Create Developer
+4. Show Details
+5. Exit
+
+Choose an option : 1
+
+Enter Employee name : Krish
+Enter Employee's age : 18
+Enter Employee's salary : 25000
+
+Employee is added successfully!
+```
+
+Display Details
+
+```
+Enter 1/2/3 to show Emp/Mana/Dev => 1
+
+Name : Krish
+Age : 18
+Salary : 25000
+```
 
 ---
 
-## ▶️ How to Run
+## 🚀 How to Run
 
-1. Save the program as:
-
-```text
-data_analyzer.py
-```
-
-2. Open a terminal or command prompt.
-
-3. Navigate to the project folder.
-
-4. Run the program:
+### Clone Repository
 
 ```bash
-python data_analyzer.py
+git clone https://github.com/your-username/Employee-Management-System.git
+```
+
+### Go to Project Folder
+
+```bash
+cd Employee-Management-System
+```
+
+### Run
+
+```bash
+python employee_management.py
 ```
 
 ---
 
-## 📚 Learning Outcomes
+## 📚 Learning Objectives
 
-By completing this project, you will gain practical experience with:
+This project helps beginners understand:
 
-* Creating menu-driven applications
-* Working with lists
-* Using list comprehensions
-* Applying lambda functions
-* Implementing sorting techniques
-* Returning multiple values from functions
-* Writing modular and reusable code
-* Performing basic data analysis in Python
+- Creating classes
+- Creating objects
+- Inheritance
+- Method overriding
+- Using `super()`
+- Menu-driven programs
+- Managing multiple objects
+- Python OOP best practices
 
 ---
 
 ## 🔮 Future Improvements
 
-* Implement factorial using recursion.
-* Add exception handling (`try-except`) for invalid inputs.
-* Prevent operations when no data has been entered.
-* Add search functionality.
-* Remove duplicate values.
-* Calculate median and mode.
-* Save and load datasets from files.
-* Visualize data using charts with Matplotlib.
+- ✅ Delete Employee
+- ✅ Update Employee Details
+- ✅ Search by Name or ID
+- ✅ Employee ID Generation
+- ✅ File Handling (Save Data)
+- ✅ JSON Database
+- ✅ SQLite Database
+- ✅ Exception Handling
+- ✅ Login System
+- ✅ GUI using Tkinter
+- ✅ Web Version using Flask/Django
 
 ---
 
-## 👨‍💻 Author
+## 🧑‍💻 Author
 
 **Krish Delvadiya**
 
-Python Beginner Project – *Data Analyzer and Transformer*
+🌱 Learning:
+- Python
+- Object-Oriented Programming
+- Data Structures
+- AI & Machine Learning
+- Data Science
 
 ---
 
-## 📄 License
+## ⭐ If you like this project
 
-This project is created for learning and educational purposes. Feel free to modify and improve it.
+Give this repository a ⭐ on GitHub.
+
+Happy Coding! 🚀
