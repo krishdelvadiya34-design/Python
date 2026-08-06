@@ -151,3 +151,55 @@
 # print("name :",obj2.name,"Rank :",obj2.rank)
 # print("name :",obj.name,"Rank :",obj.rank)
 
+# class Student:
+#     def __init__(self,marks):
+#         self.marks=marks
+
+#     def __gt__(self,other):
+#         return self.marks > other.marks
+    
+# s1=Student(90)
+# s2=Student(80)
+
+# print(s1 > s2)
+
+# n1=[23,34,45,56]
+
+
+# a= list(filter(lambda x: x%2==0,n1))
+# print(a)
+
+# numbers=[1,2,3,4,5,6,7,8,9,10]
+
+# b=list(map(lambda y: y*y,numbers))
+
+# print(b)
+
+# def recursive(n):
+#     if n==1:
+#         return 1
+#     return n * recursive(n-1)
+
+# print(recursive(5))
+
+# def fibo(f):
+#     if f<=0:
+#         return 0
+#     elif f==1:
+#         return 1
+#     return fibo(f-1) + fibo(f-2) 
+
+# print(fibo(9))
+
+# def sum(s):
+   
+#     if s==3:
+#         return 3
+#     elif s==2:
+#         return 2
+#     elif s==1:
+#         return 1
+#     return s * sum(s-3)
+
+# print(sum(int(input("Enter your choice of number :"))))
+
