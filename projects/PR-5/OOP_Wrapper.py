@@ -39,8 +39,6 @@ class Developer(Employee):
     def __del__(self):
         pass
 
-
-
 emp = []
 man = []
 dev = []
