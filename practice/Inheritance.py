@@ -109,8 +109,15 @@ class Electronics(Product):
         print(f"Brand : {self.brand}")
         print(f"Warranty : {self.warranty} years")
 
+    def __del__(self):
+        print("Thank you !")
+
 product1=Electronics("Mobile",25000,"ROG",3)
-product1.display_data()
+del product1
+product2=Electronics("Laptop",12345,"ASUS",5)
+product2.display_data()
+
+
 
         
 

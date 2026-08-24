@@ -1341,286 +1341,575 @@ import numpy as np
 
 # story1=Story()
 
-# class 1:
-class College:
+# # class 1:
+# class College:
 
-    collegename="S.v.virani"
+#     collegename="S.v.virani"
 
-    def __init__(self,fname,lname,course):
-        self.fname=fname
-        self.lname=lname
-        self.course=course
+#     def __init__(self,fname,lname,course):
+#         self.fname=fname
+#         self.lname=lname
+#         self.course=course
 
-    def display_data(self):
-        print(f"College name : {self.collegename}")
-        print(f"First name :{self.fname}")
-        print(f"Last name :{self.lname}")
-        print(f"Course name :{self.course}\n")
+#     def display_data(self):
+#         print(f"College name : {self.collegename}")
+#         print(f"First name :{self.fname}")
+#         print(f"Last name :{self.lname}")
+#         print(f"Course name :{self.course}\n")
 
-c1=College("Krish","Delvadiya","B.C.A")
-c2=College("Alay","Sakhiya","B.C.A")
+# c1=College("Krish","Delvadiya","B.C.A")
+# c2=College("Alay","Sakhiya","B.C.A")
 
-c1.display_data()
-c2.display_data()
+# c1.display_data()
+# c2.display_data()
 
 
-# class 2:
-class Employee:
+# # class 2:
+# class Employee:
 
-    company="Google"
+#     company="Google"
 
-    def __init__(self,name,age,salary,department):
-        self.name=name
-        self.age=age
-        self.salary=salary
-        self.department=department
+#     def __init__(self,name,age,salary,department):
+#         self.name=name
+#         self.age=age
+#         self.salary=salary
+#         self.department=department
 
-    def display(self):
-        print("\n---Here is the Details of Employee---")
-        print(f"Company :{self.company}")
-        print(f"Name :{self.name}")
-        print(f"Age :{self.age}")
-        print(f"Salary :{self.salary}")
-        print(f"Department :{self.department}")
+#     def display(self):
+#         print("\n---Here is the Details of Employee---")
+#         print(f"Company :{self.company}")
+#         print(f"Name :{self.name}")
+#         print(f"Age :{self.age}")
+#         print(f"Salary :{self.salary}")
+#         print(f"Department :{self.department}")
 
-# name=input("Enter your name :")
-# age=int(input("Enter your age :"))
-# salary=int(input("Enter your salary :"))
-# department=input("Enter your department :")
+# # name=input("Enter your name :")
+# # age=int(input("Enter your age :"))
+# # salary=int(input("Enter your salary :"))
+# # department=input("Enter your department :")
    
 
-# e1=Employee(name,age,salary,department)
-# e1.display()
+# # e1=Employee(name,age,salary,department)
+# # e1.display()
 
-e2=Employee("krish",18,25000,"hr")
-e2.display()
-
-
-# class 3:
-class Laptop:
-
-    def __init__(self,brand,model,ram,storage):
-        self.brand=brand
-        self.model=model
-        self.ram=ram
-        self.storage=storage
-
-    def display(self):
-        print(f"\nBrnad :{self.brand}")
-        print(f"Model :{self.model}")
-        print(f"RAM :{self.ram}")
-        print(f"Storage :{self.storage}")
-
-lap1=Laptop("Lenovo","ideapad","16gb","512gb")
-lap1.display()
-
-# class 4:
-
-class Bank:
-
-    def __init__(self,account_holder,account_number,balance):
-        self.acc_holder=account_holder
-        self.acc_number=account_number
-        self.balance=balance
-
-    def display(self):
-        print(f"\nAccount Holder : {self.acc_holder}")
-        print(f"Account Number : {self.acc_number}")
-        print(f"Balance : {self.balance}")
-
-    def deposite(self,amount):
-        self.balance=self.balance + amount
-
-    def withdraw(self,amount):
-        self.balance=self.balance - amount
-
-bank1=Bank("Krish","154445411",1000)
-bank1.deposite(2000)
-bank1.withdraw(500)
-bank1.display()
-
-# class 5:
-
-class Mobile:
-
-    brand="Samsung"
-
-    def __init__(self,model,price,storage):
-        self.model=model
-        self.price=price
-        self.storage=storage
-
-    def display(self):
-        print(f"\nModel :{self.model}")
-        print(f"Price :{self.price}")
-        print(f"Storage :{self.storage}")
-
-    def display_price(self):
-        print(f"\nPrice :{self.price}")
-
-    def discount(self,percentage):
-        discount=self.price * percentage/100
-        self.price=self.price-discount
-
-mobile1=Mobile("s24",90000,"256gb")
-mobile1.display_price()
-mobile1.discount(5)
-mobile1.display()
+# e2=Employee("krish",18,25000,"hr")
+# e2.display()
 
 
-# class 6:
+# # class 3:
+# class Laptop:
 
-class Car:
+#     def __init__(self,brand,model,ram,storage):
+#         self.brand=brand
+#         self.model=model
+#         self.ram=ram
+#         self.storage=storage
 
-    def __init__(self,model,color,price):
-        self.model=model
-        self.color=color
-        self.price=price
+#     def display(self):
+#         print(f"\nBrnad :{self.brand}")
+#         print(f"Model :{self.model}")
+#         print(f"RAM :{self.ram}")
+#         print(f"Storage :{self.storage}")
 
-    def display_data(self):
-        print(f"Model :{self.model}")
-        print(f"Color :{self.color}")
-        print(f"Price :{self.price}")
+# lap1=Laptop("Lenovo","ideapad","16gb","512gb")
+# lap1.display()
 
-    def start(self):
-        print("\nCar is starting!")
+# # class 4:
 
-    def stop(self):
-        print("Car is stopping!")
+# class Bank:
 
-car1=Car("Toyota","black",5000000)
+#     def __init__(self,account_holder,account_number,balance):
+#         self.acc_holder=account_holder
+#         self.acc_number=account_number
+#         self.balance=balance
 
-car1.display_data()
-car1.start()
-car1.stop()
+#     def display(self):
+#         print(f"\nAccount Holder : {self.acc_holder}")
+#         print(f"Account Number : {self.acc_number}")
+#         print(f"Balance : {self.balance}")
 
-# class 7:
+#     def deposite(self,amount):
+#         self.balance=self.balance + amount
 
-class Store:
+#     def withdraw(self,amount):
+#         self.balance=self.balance - amount
 
-    def __init__(self,name,price,quantity):
-        self.name=name
-        self.price=price
-        self.quantity=quantity
+# bank1=Bank("Krish","154445411",1000)
+# bank1.deposite(2000)
+# bank1.withdraw(500)
+# bank1.display()
 
-    def display_data(self):
-        print(f'''\nName: {self.name}
-Price :{self.price}
-Quantity :{self.quantity}''')
+# # class 5:
 
-    def total_price(self):
-        total=self.price*self.quantity
-        print("Total amount :",total)
+# class Mobile:
 
-store1=Store("Krish",200,5)
-store1.display_data()
-store1.total_price()
+#     brand="Samsung"
 
+#     def __init__(self,model,price,storage):
+#         self.model=model
+#         self.price=price
+#         self.storage=storage
 
-# class 8:
+#     def display(self):
+#         print(f"\nModel :{self.model}")
+#         print(f"Price :{self.price}")
+#         print(f"Storage :{self.storage}")
 
-class Student:
+#     def display_price(self):
+#         print(f"\nPrice :{self.price}")
 
-    def __init__(self,name,maths,science,english):
-        self.name=name
-        self.maths=maths
-        self.science=science
-        self.english=english
+#     def discount(self,percentage):
+#         discount=self.price * percentage/100
+#         self.price=self.price-discount
 
-    def display(self):
-        print(f"\nName :{self.name}")
-        print(f"Maths :{self.maths}")
-        print(f"Science :{self.science}")
-        print(f"English :{self.english}")
-
-    def total_marks(self):
-        total=self.maths+self.science+self.english
-        print("\nTotal marks :",total)
-
-    def percentage(self):
-        per=(self.maths+self.science+self.english)/3
-        print("Percentage :",per,"%")
-
-st1=Student("Krish",90,47,98)
-
-st1.display()
-st1.total_marks()
-st1.percentage()
+# mobile1=Mobile("s24",90000,"256gb")
+# mobile1.display_price()
+# mobile1.discount(5)
+# mobile1.display()
 
 
-# class 9:
+# # class 6:
 
-class Movie:
+# class Car:
 
-    def __init__(self,name,genre,rating):
-        self.name=name
-        self.genre=genre
-        self.rating=rating
+#     def __init__(self,model,color,price):
+#         self.model=model
+#         self.color=color
+#         self.price=price
 
-    def display(self):
-        print(f"\nName :{self.name}")
-        print(f"Genre :{self.genre}")
-        print(f"Rating :{self.rating}")
+#     def display_data(self):
+#         print(f"Model :{self.model}")
+#         print(f"Color :{self.color}")
+#         print(f"Price :{self.price}")
 
-    def is_hit(self):
-        if self.rating>7:
-            print("\nThis movie is hit!")
-        else:
-            print("\nThis movie is flop!")
+#     def start(self):
+#         print("\nCar is starting!")
 
-movie1=Movie("Krish","Adventure",6)
-movie1.display()
-movie1.is_hit()
+#     def stop(self):
+#         print("Car is stopping!")
+
+# car1=Car("Toyota","black",5000000)
+
+# car1.display_data()
+# car1.start()
+# car1.stop()
+
+# # class 7:
+
+# class Store:
+
+#     def __init__(self,name,price,quantity):
+#         self.name=name
+#         self.price=price
+#         self.quantity=quantity
+
+#     def display_data(self):
+#         print(f'''\nName: {self.name}
+# Price :{self.price}
+# Quantity :{self.quantity}''')
+
+#     def total_price(self):
+#         total=self.price*self.quantity
+#         print("Total amount :",total)
+
+# store1=Store("Krish",200,5)
+# store1.display_data()
+# store1.total_price()
 
 
-# class 10:
+# # class 8:
 
-class College:
+# class Student:
 
-    collegename="S.V.virani"
+#     def __init__(self,name,maths,science,english):
+#         self.name=name
+#         self.maths=maths
+#         self.science=science
+#         self.english=english
 
-    def __init__(self,name,id,course,sem,maths,english,science):
-        self.name=name
-        self.id=id
-        self.course=course
-        self.sem=sem
-        self.maths=maths
-        self.english=english
-        self.science=science
+#     def display(self):
+#         print(f"\nName :{self.name}")
+#         print(f"Maths :{self.maths}")
+#         print(f"Science :{self.science}")
+#         print(f"English :{self.english}")
 
-    def display(self):
-        print(f"\nCollege name :{self.collegename}")
-        print(f"Student name :{self.name}")
-        print(f"Student ID :{self.id}")
-        print(f"Course :{self.course}")
-        print(f"Semester :{self.sem}")
-        print(f"Maths :{self.maths}")
-        print(f"English :{self.english}")
-        print(f"Science :{self.science}")
+#     def total_marks(self):
+#         total=self.maths+self.science+self.english
+#         print("\nTotal marks :",total)
 
-    def calculate_per(self):
-        total=self.maths+self.science+self.english
-        per=(total)/3
-        print(f"\nPercentage :{per}")
+#     def percentage(self):
+#         per=(self.maths+self.science+self.english)/3
+#         print("Percentage :",per,"%")
 
-    def result(self):
-        if self.maths+self.science+self.english>40:
-            print("\nYou are passed!")
-        else:
-            print("\nyou are failed!")
+# st1=Student("Krish",90,47,98)
+
+# st1.display()
+# st1.total_marks()
+# st1.percentage()
+
+
+# # class 9:
+
+# class Movie:
+
+#     def __init__(self,name,genre,rating):
+#         self.name=name
+#         self.genre=genre
+#         self.rating=rating
+
+#     def display(self):
+#         print(f"\nName :{self.name}")
+#         print(f"Genre :{self.genre}")
+#         print(f"Rating :{self.rating}")
+
+#     def is_hit(self):
+#         if self.rating>7:
+#             print("\nThis movie is hit!")
+#         else:
+#             print("\nThis movie is flop!")
+
+# movie1=Movie("Krish","Adventure",6)
+# movie1.display()
+# movie1.is_hit()
+
+
+# # class 10:
+
+# class College:
+
+#     collegename="S.V.virani"
+
+#     def __init__(self,name,id,course,sem,maths,english,science):
+#         self.name=name
+#         self.id=id
+#         self.course=course
+#         self.sem=sem
+#         self.maths=maths
+#         self.english=english
+#         self.science=science
+
+#     def display(self):
+#         print(f"\nCollege name :{self.collegename}")
+#         print(f"Student name :{self.name}")
+#         print(f"Student ID :{self.id}")
+#         print(f"Course :{self.course}")
+#         print(f"Semester :{self.sem}")
+#         print(f"Maths :{self.maths}")
+#         print(f"English :{self.english}")
+#         print(f"Science :{self.science}")
+
+#     def calculate_per(self):
+#         total=self.maths+self.science+self.english
+#         per=(total)/3
+#         print(f"\nPercentage :{per}")
+
+#     def result(self):
+#         if self.maths+self.science+self.english>40:
+#             print("\nYou are passed!")
+#         else:
+#             print("\nyou are failed!")
             
 
-college1=College("Krish",2513,"b.c.a.","sem=1",50,90,79)
-college1.display()
-college1.calculate_per()
-college1.result()
+# college1=College("Krish",2513,"b.c.a.","sem=1",50,90,79)
+# college1.display()
+# college1.calculate_per()
+# college1.result()
 
 
+# class Student:
 
+#     def __init__(self,name,age,marks):
+#         self.name=name
+#         self.age=age
+#         self.set_marks(marks)
+
+#     def set_marks(self,marks):
+#         if marks>100 or marks<0:
+#             print("Invalid marks!")
+#         else:
+#             self.marks=marks
+
+#     def display(self):
+#         print(f"Name :{self.name}")
+#         print(f"Age :{self.age}")
+#         print(f"Marks :{self.marks}")
+
+# st1=Student("Krish",18,101)
+# st2=Student("Doom",18,99)
+
+# st1.display()
+# st2.display()
+
+# class Student:
+
+#     def __init__(self, name, age, marks):
+#         self.name = name
+#         self.age = age
+#         self.set_marks(marks)
+
+#     def set_marks(self, marks):
+#         if marks > 100 or marks < 0:
+#             print("Invalid marks!")
+#         else:
+#             self.marks = marks
+
+#     def display(self):
+#         print(f"Name : {self.name}")
+#         print(f"Age : {self.age}")
+#         print(f"Marks : {self.marks}")
+
+
+# st1 = Student("Krish", 18, 101)
+# st2 = Student("Doom", 18, 99)
+
+# st1.display()
+# st2.display()
+
+# class Student:
+
+#     def __init__(self, name, age, marks):
+#         self.name = name
+#         self.age = age
+#         # self.marks = 0
+#         self.set_marks(marks)
+
+#     def set_marks(self, marks):
+#         if 0 <= marks <= 100:
+#             self.marks = marks
+#         else:
+#             print("Invalid marks!")
+
+#     def display(self):
+#         print(f"Name : {self.name}")
+#         print(f"Age : {self.age}")
+#         print(f"Marks : {self.marks}")
+
+# st1 = Student("Krish", 18, 101)
+# st2 = Student("Doom", 18, 99)
+
+# st1.display()
+# st2.display()
+
+# class Student:
+
+#     def __init__(self, name, marks):
+#         self.name = name
+#         self.set_marks(marks)
+
+#     def set_marks(self, marks):
+#         if 0 <= marks <= 100:
+#             self.marks = marks
+#         else:
+#             print("Invalid marks")
+
+#     def display(self):
+#         print(f"Name : {self.name}")
+#         print(f"Marks : {self.marks}")
+
+
+# s1 = Student("Krish", 80)
+# s1.display()
+
+# # s1.set_marks(90)
+# print(s1.marks)
+
+# s1.set_marks(150)
+
+# class Student:
+
+#     def __init__(self, marks):
+#         self._marks = marks
+
+#     def get_marks(self):
+#         return self._marks
+
+
+# st1 = Student(90)
+# print(st1.get_marks())
+
+# class Student:
+
+#     def __init__(self, marks):
+#         self._marks = marks
+
+#     def marks(self):
+#         return self._marks
+
+
+# st1 = Student(90)
+
+# print(st1.marks())
+
+# class School:
+
+#     def __init__(self,name,marks):
+#         self.name=name
+#         self.marks=marks
+
+#     @property
+#     def get_marks(self):
+#         return self.marks
+
+#     def set_marks(self,marks):
+#         if 101>marks<=0:
+#             print(self.marks)
+#         else:
+#             print("Invalid marks !")
+
+# st1=School("Krish",98)
+# print(st1.get_marks)
+# # print(st1.name)
+
+
+# class Balance:
+
+#     def __init__(self,name,age,balance):
+#         self.name=name
+#         self.age=age
+#         self.__balance=balance
+
+#     @property
+#     def get_balance(self):
+#         return self.__balance
+
+#     @get_balance.setter
+#     def set_balance(self,amount):
+#         if self.__balance>0:
+#             self.__balance = amount
+#         else:
+#             print("Balance can't be in negative!")
+
+#     def display(self):
+#         print(f"\nName : {self.name}")
+#         print(f"Age : {self.age}")
+#         print(f"Balance : {self.__balance}")
+
+
+# bank=Balance("Krish",18,21212)
+# bank.display()
+# bank.amount=2156
+# print(bank.get_balance)
+from abc import ABC,abstractmethod
+from datetime import datetime
+
+class Person:
+
+    def __init__(self,name,age,address):
+        self.name=name
+        self.age=age
+        self.address=address
+
+class Customer(Person):
+
+    def __init__(self,name,age,address,customer_id):
+        super().__init__(name,age,address)
+        self.customer_id=customer_id
+
+    def display_data(self):
+        print(f"Name : {self.name}")
+        print(f"Age : {self.age}")
+        print(f"Address : {self.address}")
+        print(f"Customer ID : {self.customer_id}")
+
+class Account(ABC):
+    __totalaccount=0
+
+    def __init__(self,account_number,account_holder,balance=0):
+        self.account_number=account_number
+        self.account_holder=account_holder
+        self.__balance=balance
+        self.transaction = []
+        Account.__totalaccount += 1
+
+    @property
+    def balance(self):
+        return self.__balance
+    
+    @balance.setter
+    def balance(self,amount):
         
+        if self.__balance<0:
+            print("Balance can not be Negative")
+
+        else:
+            self.__balance = amount
+
+    def deposite(self,amount):
+
+        if self.balance<0 and self.balance+amount<0:
+            print("Insufficient Balance")
+
+        else:
+            self.balance += amount
+
+        self.transaction.append({
+            "Type" : "Deposite",
+            "Amount" : amount,
+            "Time" : datetime.now()
+        })
+
+    def withdraw(self,amount):
+
+        if amount>self.balance:
+            print("Insufficient Balance")
+
+        else:
+            self.balance -= amount
+
+        self.transaction.apprnd({
+            "Type" : "Withdraw",
+            "Amount" : amount,
+            "Time" : datetime.now()
+        })
+
+class Savingsaccount(Account):
+
+    def __init__(self,account_number,account_holder,interest_rate,balance=0):
+        super().__init__(account_number,account_holder,balance,)
+        self.interest_rate=interest_rate
+
+
+    def add_interest(self):
+        interest = self.balance * self.interest_rate / 100
+        self.balance += interest
+
+
+
+class Currentaccount(Account):
+
+
+    def __init__(self,account_number,account_holder,overdraft_limit,balance=0):
+        super().__init__(account_number,account_holder,balance)
+        self.overdraft_limit=overdraft_limit
+
+    def overdraft(self):
+        pass
 
 
 
 
 
 
+    
+
+
+       
+
+
+    '''
+print("===== BANK MANAGEMENT SYSTEM =====")
+print("1. Create New Account")
+print("2. Deposit Money")
+print("3. Withdraw Money")
+print("4. Transfer Money")
+print("5. Check Balance")
+print("6. Print Statement")
+print("7. View Total Accounts (classmethod)")
+print("8. Exit")
+
+choice=int(input("Enter your choice :"))
+
+if 
+    
+    
+    '''
