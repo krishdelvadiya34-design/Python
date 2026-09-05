@@ -2066,10 +2066,3 @@ finally:
     print("Thank you")
 
 
-
-
-    
-
-
-
-
