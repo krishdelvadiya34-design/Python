@@ -2050,19 +2050,43 @@
 #     print("Thank you!")
 
 
-try:
-    dict={"name":"krish",
-          "age" : 18,
-          "course" : "BCA"}
+# try:
+#     dict={"name":"krish",
+#           "age" : 18,
+#           "course" : "BCA"}
 
-    key=input("Enter a key to print value :")
+#     key=input("Enter a key to print value :")
 
-    print(dict[key])
+#     print(dict[key])
 
-except KeyError:
-    print("Please enter a valid key")
+# except KeyError:
+#     print("Please enter a valid key")
 
-finally:
-    print("Thank you")
+# finally:
+#     print("Thank you")
+
+
+# print(__name__)
+
+# from datetime import datetime,date,timedelta,time
+
+# data=datetime.now().replace(microsecond=0)
+
+# data2=time(2,20,20)
+
+# data3=date(2026,12,12)
+
+# data4=timedelta(weeks=1,hours=12)
+
+# print(data)
+# print(data2)
+# print(data3)
+# print(data4)
+
+# import time
+# print(time.sleep(5))
+
+
+
 
 
