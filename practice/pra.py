@@ -2086,7 +2086,15 @@
 # import time
 # print(time.sleep(5))
 
+import numpy as np
 
+row = int(input("Enter row number :"))
+column = int(input("Enter column number :"))
+result = input(f"Enter {row*column} element to create an array :")
+
+array = np.array(list(map(int,result.split()))).reshape(row,column)
+
+print(array)
 
 
 
