@@ -129,6 +129,23 @@ Choose an option:
         5. Compute Aggregates and Statistics
         6. Exit
 
+Screen shots :
+
+1.Create array:
+![create array](Screenshot1.png)
+
+2.Maths:
+![maths](Screenshot2.png)
+
+3.Combine and Split:
+![combine and split](Screenshot3.png)
+
+4.Search,Sort and Filter
+![Search,Sort and Filter](Screenshot4.png)
+
+5.Compute Aggregates and Statistics
+![Aggregates and Statistics](Screenshot5.png)
+
 📦 1. Create a NumPy Array
 
 The program currently supports:

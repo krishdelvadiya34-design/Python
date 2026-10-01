@@ -25,7 +25,7 @@ def array_x():
     
             row = int(input("\nEnter how many row you want to create : "))
             column = int(input("Enter how many column you want to create : "))
-            data = input(f"\n\tEnter {row*column} elements to create Array (sepreted by space) : ")
+            data = input(f"\nEnter {row*column} elements to create Array (sepreted by space) : ")
     
             array_data = np.array(list(map(int,data.split()))).reshape(row,column)
     
